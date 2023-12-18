@@ -1,35 +1,3 @@
-# Ignore compiled files
-*.pyc
-*.pyo
-__pycache__/
-
-# Ignore the virtual environment
-venv/
-ll_env/
-
-# Ignore logs and databases
-*.log
-*.sqlite3
-
-# Ignore local configuration files
-.env
-local_settings.py
-
-# Ignore IDE or editor-specific files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Ignore system and temporary files
-.DS_Store
-Thumbs.db
-__MACOSX/
-
-# Ignore dependencies
-/node_modules/
-/yarn-error.log
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
@@ -44,8 +12,7 @@ __pycache__/
 env/
 build/
 dist/
-eggs/
-*.egg-info/
+egg-info/
 *.egg
 
 # Visual Studio Code directory
@@ -58,22 +25,13 @@ eggs/
 .DS_Store
 
 # SQLite database file
-db.sqlite3
+*.db
 
 # Log files
 *.log
 
-# Ignore virtual environment
-venv/
-
 # Ignore local settings
 local_settings.py
-
-# Ignore generated static files
-staticfiles/
-
-# Ignore media files
-media/
 
 # Ignore environment variables file
 .env
