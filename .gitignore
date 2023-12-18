@@ -35,3 +35,22 @@ local_settings.py
 
 # Ignore environment variables file
 .env
+
+# Media files (if you use Django's MEDIA_ROOT)
+media/
+
+# Static files (if you use Django's STATIC_ROOT)
+static/
+
+# Ignore database migration files
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Ignore the secret key file
+*.secret_key
+
+# Ignore development settings file
+dev_settings.py
+
+# Ignore Django test database
+db.sqlite3
