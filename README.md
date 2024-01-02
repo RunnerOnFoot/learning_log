@@ -22,6 +22,6 @@ Learning Log is a web application designed to help users track and log their lea
 
 ## Issues and Feedback
 
-If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/RunnerOnFoot/learning-log/issues).
+If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/RunnerOnFoot/learning_log/issues).
 
 Happy learning with Learning Log! 📚🚀
