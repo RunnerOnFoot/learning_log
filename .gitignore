@@ -14,6 +14,7 @@ build/
 dist/
 egg-info/
 *.egg
+ll_env/
 
 # Visual Studio Code directory
 .vscode/
@@ -54,3 +55,4 @@ dev_settings.py
 
 # Ignore Django test database
 db.sqlite3
+
