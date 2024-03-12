@@ -1,3 +1,4 @@
 pip
 django
 autopep8
+django-bootstrap5
