@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from platformshconfig import Config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -136,16 +137,16 @@ LOGOUT_REDIRECT_URL = 'learning_logs:index'
 LOGIN_URL = 'accounts:login'
 
 # Platform.sh settings.
-from platformshconfig import Config
 
 config = Config()
 if config.is_valid_platform():
     ALLOWED_HOSTS.append('.platform.site')
-    
+
     if config.appDir:
         STATIC_ROOT = Path(config.appDir) / 'static'
-    if  config.projectEntropy
-    
+    if config.projectEntropy:
+        SECRET_KEY = config.projectEntropy
+
     if not config.in_build():
         db_settings = config.credentials('database')
         DATABASES = {
