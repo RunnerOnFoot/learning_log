@@ -140,7 +140,7 @@ LOGIN_URL = 'accounts:login'
 
 config = Config()
 if config.is_valid_platform():
-    ALLOWED_HOSTS.append('.platform.site')
+    ALLOWED_HOSTS = ['*']
 
     if config.appDir:
         STATIC_ROOT = Path(config.appDir) / 'static'
