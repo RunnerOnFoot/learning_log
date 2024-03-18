@@ -140,7 +140,7 @@ LOGIN_URL = 'accounts:login'
 
 config = Config()
 if config.is_valid_platform():
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS.append('.platformsh.site')
     DEBUG = False
 
     if config.appDir:
