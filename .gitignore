@@ -44,7 +44,7 @@ media/
 static/
 
 # Ignore database migration files
-**/migrations/*.py
+
 **/migrations/*.pyc
 
 # Ignore the secret key file
