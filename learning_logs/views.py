@@ -26,7 +26,7 @@ def topic(request, topic_id):
     # Make sure the topic belongs to the current user.
     check_topic_owner(topic, request.user)
 
-    entries = Entry.objects.filter(topic=topic).order_by('-date_added')
+    entries = topic.entry_set.order_by('-date_added')
     context = {'topic': topic, 'entries': entries}
     return render(request, 'learning_logs/topic.html', context)
 
